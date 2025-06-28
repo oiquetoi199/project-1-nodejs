@@ -1,0 +1,21 @@
+{
+    "version": "1.0.0",
+    "configurations": [
+        {
+            "name": "debug-hoidanit",
+            "type": "node",
+            "request": "launch",
+            "cwd": "${workspaceRoot}",
+            // link den chuong trinh chay (o day la npm)
+            "runtimeExecutable": "/home/arch/.nvm/versions/node/v22.16.0/bin/npm",
+            // cau lenh can thuc thi
+            "runtimeArgs": [
+                "run",
+                "start:debug"
+            ],
+            // giong nhu viet cau lenh npm run start:debug
+            // chon terminal
+            "console": "integratedTerminal"
+        }
+    ],
+}
