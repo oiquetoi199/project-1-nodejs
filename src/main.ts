@@ -1,6 +1,7 @@
 import express, { urlencoded } from "express";
 import 'dotenv/config';
 import webRoutes from "./routes/web";
+import getConnection from "./config/db";
 
 
 const PORT = process.env.PORT || 8080
@@ -20,3 +21,5 @@ app.listen(PORT, () => {
 });
 
 webRoutes(app);
+
+getConnection();
